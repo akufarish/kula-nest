@@ -9,10 +9,18 @@ import { KomentarModule } from './komentar/komentar.module';
 import { ToolsModule } from './tools/tools.module';
 import { GambarController } from './gambar/gambar.controller';
 import { GambarService } from './gambar/gambar.service';
-import { GambarController } from './gambar/gambar.controller';
+import { GambarModule } from './gambar/gambar.module';
 
 @Module({
-  imports: [AuthModule, UserModule, ProjectModule, PrismaModule, KomentarModule, ToolsModule],
+  imports: [
+    AuthModule,
+    UserModule,
+    ProjectModule,
+    PrismaModule,
+    KomentarModule,
+    ToolsModule,
+    GambarModule,
+  ],
   controllers: [AppController, GambarController],
   providers: [AppService, GambarService],
 })

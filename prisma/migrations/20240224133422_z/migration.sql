@@ -1,0 +1,3 @@
+-- AlterTable
+ALTER TABLE `user` MODIFY `role` VARCHAR(191) NOT NULL DEFAULT 1,
+    MODIFY `token` VARCHAR(191) NULL;
